@@ -1,19 +1,12 @@
-/* style.css */
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to right, #f7f7f7, #e0f7fa);
   color: #333;
+  line-height: 1.6;
 }
 
-.hero {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to right, #00bcd4, #2196f3);
-  color: white;
-}
-
-.projects {
+.hero, .projects, .contact {
   padding: 40px 20px;
   text-align: center;
 }
@@ -22,13 +15,22 @@ body {
   background: white;
   margin: 10px auto;
   padding: 20px;
-  max-width: 300px;
+  max-width: 90%;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.contact {
-  text-align: center;
-  padding: 20px;
-  background: #eeeeee;
+/* Responsive text */
+h1 {
+  font-size: 2rem;
+}
+p, h2 {
+  font-size: 1rem;
+}
+
+/* Optional: Make layout stack vertically */
+@media (max-width: 600px) {
+  .card {
+    font-size: 0.95rem;
+  }
 }
